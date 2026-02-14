@@ -7,5 +7,6 @@ authors = [
 ]
 
 dependencies = [
-    "ipinfo>= 5.4.0"
+    "ipinfo>= 5.4.0",
+    "python-dotenv>= 1.2.1"
 ]
