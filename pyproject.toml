@@ -1,0 +1,11 @@
+[project]
+name = "NetScan"
+version = "0.0.0"
+description = "IP/DNS info"
+authors = [
+  { name="Yusuf" }
+]
+
+dependencies = [
+    "ipinfo>= 5.4.0"
+]
