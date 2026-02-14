@@ -1,4 +1,4 @@
-import ipinfo, os, socket
+import ipinfo, os, socket, dns.resolver
 from dotenv import load_dotenv
 
 def Handler():
@@ -10,8 +10,8 @@ def Handler():
     handler = ipinfo.getHandler(TOKEN)
 
 def Details(target: str):
-    details = handler.getDetails(target)
     try:
+        details = handler.getDetails(target)
         print(details.all)
     except Exception as e:
         pass
@@ -25,3 +25,9 @@ def Details(target: str):
     print(f"Organization: {details.org}")
     print(f"Timezone: {details.timezone}")
     '''
+
+    try:
+        for i in dns.resolver.resolve(target):
+            print(i.to_text())
+    except Exception as e:
+        pass
