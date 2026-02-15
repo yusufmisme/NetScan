@@ -87,4 +87,4 @@ target: 8.8.8.8
 
 ## License
 
-Add a license file (for example `MIT`) if you plan to distribute this project publicly.
+MIT License (c) 2026 yusufmisme
